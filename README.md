@@ -2,9 +2,11 @@
 
 A new Flutter project.
 
-Please run,
-> flutter pub get
-> open ios/Runner.xcworkspace
+Environment,
+> flutter doctor -v
 
-Before commit/push, 
+Build,
+> flutter pub get && open ios/Runner.xcworkspace
+
+Before commit/push,
 > flutter clean
