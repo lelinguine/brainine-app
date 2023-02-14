@@ -1,1 +1,3 @@
-# brainine-app
+# brainine
+
+A new Flutter project.
