@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+//import 'package:google_fonts/google_fonts.dart';
+
+import 'sandbox/sandbox.dart';
+import 'navigation/home.dart';
+
 void main() {
   runApp(const MainApp());
 }
@@ -9,12 +14,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      title: "Brainine",
+      theme: ThemeData(
+        brightness: Brightness.light,
+        fontFamily: "Poppins",
       ),
+      home: const MySandBox(),
     );
   }
 }
