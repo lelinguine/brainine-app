@@ -6,11 +6,11 @@ import 'sandbox/sandbox.dart';
 import 'navigation/home.dart';
 
 void main() {
-  runApp(MainApp());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatelessWidget {
-  MainApp({super.key});
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MainApp extends StatelessWidget {
         brightness: Brightness.light,
         fontFamily: "Poppins",
       ),
-      home: MySandBox(),
+      home: const MySandBox(),
     );
   }
 }

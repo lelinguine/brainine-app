@@ -9,7 +9,7 @@ class MySelect extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 15.0),
+      margin: const EdgeInsets.symmetric(vertical: 15.0),
       height: 100,
       width: 320,
       decoration: BoxDecoration(
@@ -18,7 +18,7 @@ class MySelect extends StatelessWidget {
         border: Border.all(
           width: 3,
         ),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.black,
             offset: Offset(5, 5),
@@ -28,7 +28,8 @@ class MySelect extends StatelessWidget {
       child: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Text("$title's Path",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+              style:
+                  const TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
           Text(
             "${score}pts",
             style: TextStyle(
