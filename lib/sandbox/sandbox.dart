@@ -7,16 +7,16 @@ class MySandBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            MySelect(
+          children: const [
+            const MySelect(
               title: "Survival",
               score: "19",
             ),
-            MySelect(
+            const MySelect(
               title: "Master",
               score: "12",
             )
