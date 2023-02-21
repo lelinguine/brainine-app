@@ -34,7 +34,8 @@ class MySelect extends StatelessWidget {
             "${score}pts",
             style: TextStyle(
                 color: Colors.blueGrey.withOpacity(0.8), fontSize: 16),
-          )
+          ),
+          //const Image(image: AssetImage('assets/brain.png'))
         ]),
       ),
     );
