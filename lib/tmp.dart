@@ -9,7 +9,7 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //const à retirer pour le build iOS
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -28,7 +28,6 @@ class MyHome extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 20),
             MyGame(
               title: "Survival",
               score: "19",

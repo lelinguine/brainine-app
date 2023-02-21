@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+...........................................
+
 Environment,
 > flutter doctor -v
 
@@ -10,3 +12,8 @@ Build,
 
 Before commit/push,
 > flutter clean
+
+...........................................
+
+Links
+https://www.flaticon.com/search?author_id=401&style_id=1225&type=standard&word=pixel
