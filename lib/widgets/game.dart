@@ -73,6 +73,9 @@ class MyGameState extends State<StatefulWidget> {
           canceltapanimation();
           Navigator.push(context, downslideanimation());
         },
+        onTapCancel: () {
+          canceltapanimation();
+        },
         onTapDown: (TapDownDetails tapDownDetails) {
           tapanimation();
         },
