@@ -1,0 +1,10 @@
+^C:\PROJECTS\WORKSPACE\BRAININE-APP\BUILD\WINDOWS\CMAKEFILES\33F14A4C3CDDFDF64F69C6FD75C2A72D\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

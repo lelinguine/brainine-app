@@ -1,48 +1,34 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/game.dart';
-import '../widgets/stat.dart';
+class Bird extends StatefulWidget {
+  const Bird({
+    super.key,
+    this.color = const Color(0xFFFFE306),
+    this.child,
+  });
 
-class MyHome extends StatelessWidget {
-  const MyHome({super.key});
+  final Color color;
+  final Widget? child;
+
+  @override
+  State<Bird> createState() => _BirdState();
+}
+
+class _BirdState extends State<Bird> {
+  double _size = 1.0;
+
+  void grow() {
+    setState(() {
+      _size += 0.1;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    //const à retirer pour le build iOS
-    return const Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Brainine",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 36)),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                MyStat(
-                  slot: 'lib/assets/light/graph.png',
-                ),
-                SizedBox(width: 14),
-                MyStat(
-                  slot: 'lib/assets/light/trophy.png',
-                ),
-              ],
-            ),
-            MyGame(
-              title: "Survival",
-              score: "19",
-              slot1: 'lib/assets/light/skull.png',
-              slot2: 'lib/assets/light/heart.png',
-            ),
-            MyGame(
-              title: "Master",
-              score: "12",
-              slot1: 'lib/assets/light/crown.png',
-              slot2: 'lib/assets/light/star.png',
-            )
-          ],
-        ),
-      ),
+    return Container(
+      color: widget.color,
+      transform: Matrix4.diagonal3Values(_size, _size, 1.0),
+      child: widget.child,
     );
   }
 }
