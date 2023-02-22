@@ -9,7 +9,7 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //const à retirer pour le build iOS
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
