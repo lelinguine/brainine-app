@@ -16,6 +16,7 @@ class MyGame extends StatefulWidget {
   final String slot2;
 
   @override
+  // ignore_for_file: no_logic_in_create_state
   State<StatefulWidget> createState() =>
       MyGameState(score: score, slot1: slot1, slot2: slot2, title: title);
 }

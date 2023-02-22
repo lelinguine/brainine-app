@@ -6,7 +6,6 @@ class MyRules extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //const à retirer pour le build iOS
     return Scaffold(
       body: Center(
         child: ElevatedButton(
