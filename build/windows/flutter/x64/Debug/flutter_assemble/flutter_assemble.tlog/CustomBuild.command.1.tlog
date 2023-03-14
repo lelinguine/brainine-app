@@ -1,0 +1,28 @@
+^C:\PROJECTS\WORKSPACE\BRAININE-APP\BUILD\WINDOWS\CMAKEFILES\296ED3E304933D4A67C741C8595C28F9\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Projects\Dependencies\flutter PROJECT_DIR=C:\Projects\Workspace\brainine-app FLUTTER_ROOT=C:\Projects\Dependencies\flutter FLUTTER_EPHEMERAL_DIR=C:\Projects\Workspace\brainine-app\windows\flutter\ephemeral PROJECT_DIR=C:\Projects\Workspace\brainine-app FLUTTER_TARGET=C:\Projects\Workspace\brainine-app\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Projects\Workspace\brainine-app\.dart_tool\package_config.json C:/Projects/Dependencies/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROJECTS\WORKSPACE\BRAININE-APP\BUILD\WINDOWS\CMAKEFILES\C7114A7EC463C9C6D55A63DDADDC5D40\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROJECTS\WORKSPACE\BRAININE-APP\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Projects/Workspace/brainine-app/windows -BC:/Projects/Workspace/brainine-app/build/windows --check-stamp-file C:/Projects/Workspace/brainine-app/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
