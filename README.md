@@ -2,8 +2,6 @@
 
 A new Flutter project.
 
-...........................................
-
 Environment,
 > flutter doctor -v
 
