@@ -14,10 +14,10 @@ class MyRules extends StatelessWidget {
           ),
           child: const Text('Back'),
           onPressed: () {
-            Navigator.pop(
-              context,
-              MaterialPageRoute(builder: (context) => const MyHome()),
-            );
+            // Navigator.pop(
+            //   context,
+            //   MaterialPageRoute(builder: (context) => const MyHome()),
+            // );
           },
         ),
       ),

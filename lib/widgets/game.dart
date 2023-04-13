@@ -68,6 +68,7 @@ class MyGameState extends State<StatefulWidget> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return GestureDetector(
         onTapUp: (TapUpDetails tapUpDetails) {
           canceltapanimation();
@@ -80,18 +81,19 @@ class MyGameState extends State<StatefulWidget> {
           tapanimation();
         },
         child: Container(
-            margin: const EdgeInsets.symmetric(vertical: 15.0),
+            margin: const EdgeInsets.symmetric(vertical: 9.0),
             height: 90,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: theme.primaryColorLight,
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                width: 3,
+                width: 4,
+                color: theme.primaryColor,
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black,
+                  color: theme.primaryColor,
                   offset: xoffset,
                 ),
               ],
@@ -117,7 +119,7 @@ class MyGameState extends State<StatefulWidget> {
                 ),
                 Positioned(
                   top: 16,
-                  left: 80,
+                  left: 75,
                   child: Column(
                     children: [
                       Text("$title's Path",
@@ -125,8 +127,6 @@ class MyGameState extends State<StatefulWidget> {
                               fontWeight: FontWeight.bold, fontSize: 20)),
                       Text(
                         "${score}pts",
-                        style: TextStyle(
-                            color: Colors.grey.withOpacity(0.8), fontSize: 16),
                       ),
                     ],
                   ),
