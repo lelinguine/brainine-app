@@ -1,61 +1,42 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'context.dart';
 import 'navigation/home.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyMainApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  //............................................................................
-
-  final String app = 'Brainine';
-
-  final TextTheme textTheme = const TextTheme(
-      titleLarge: TextStyle(
-        fontSize: 36.0,
-      ),
-      titleMedium: TextStyle(
-        fontSize: 20.0,
-      ),
-      bodyMedium: TextStyle(
-        fontSize: 16.0,
-      ));
-
-  //............................................................................
-
+class MyMainApp extends StatelessWidget {
+  const MyMainApp({super.key});
   @override
   Widget build(BuildContext context) {
-    final Brightness brightness = MediaQuery.of(context).platformBrightness;
-    final bool isDarkMode = false; //brightness == Brightness.dark;
-
     return MaterialApp(
-      title: app,
+      title: context.customTitle,
       debugShowCheckedModeBanner: false,
-      themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
+        scaffoldBackgroundColor: context.isDark()
+            ? const Color.fromARGB(255, 0, 0, 0)
+            : const Color.fromARGB(255, 255, 255, 255),
         fontFamily: GoogleFonts.poppins(fontWeight: FontWeight.w600).fontFamily,
-        primaryColor: Colors.black,
-        primaryColorLight: Colors.white,
-        brightness: Brightness.light,
-        textTheme: textTheme,
+        primaryColor: context.isDark() ? Colors.white : Colors.black,
+        primaryColorLight: context.isDark() ? Colors.black : Colors.white,
+        brightness: context.isDark() ? Brightness.dark : Brightness.light,
+        textTheme: const TextTheme(
+            titleLarge: TextStyle(
+              fontSize: 36.0,
+              height: 1.2,
+            ),
+            titleMedium: TextStyle(
+              fontSize: 20.0,
+            ),
+            bodyMedium: TextStyle(
+              fontSize: 16.0,
+              height: 1,
+            )),
       ),
-      darkTheme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0),
-        fontFamily: GoogleFonts.poppins(fontWeight: FontWeight.w600).fontFamily,
-        primaryColor: Colors.white,
-        primaryColorLight: Colors.black,
-        brightness: Brightness.dark,
-        textTheme: textTheme,
-      ),
-      home: MyHome(
-        path: isDarkMode ? 'lib/assets/dark/' : 'lib/assets/light/',
-        app: app,
-      ),
+      home: const MyHome(),
     );
   }
 }
