@@ -42,8 +42,7 @@ class _MyButtonState extends State<MyButton> {
         child: GestureDetector(
             onTapUp: (TapUpDetails tapUpDetails) {
               _updateOffset();
-              Navigator.push(
-                  context, slideAnimation(page, const Offset(0.0, 1.0)));
+              pushPage(context, page);
             },
             onTapCancel: () {
               _updateOffset();

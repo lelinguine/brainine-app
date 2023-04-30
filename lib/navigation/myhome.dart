@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../context.dart';
 
 import '../navigation/myrules.dart';
-import '../components/optionsdetails.dart';
-import '../components/packsdetails.dart';
 import '../components/mybutton.dart';
+import '../components/optionsdetails.dart';
+import '../components/packslist.dart';
 
 class MyHome extends StatelessWidget {
   const MyHome({Key? key}) : super(key: key);
@@ -25,7 +25,7 @@ class MyHome extends StatelessWidget {
               context.customTitle,
               style: Theme.of(context).textTheme.titleLarge,
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 12),
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -40,36 +40,8 @@ class MyHome extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 40),
-            const MyButton(
-              page: MyRules(),
-              child: PacksDetails(
-                title: 'Sprinter',
-                score: '28',
-                slot1: 'run.png',
-                slot2: 'chrono.png',
-              ),
-            ),
-            const SizedBox(height: 14),
-            const MyButton(
-              page: MyRules(),
-              child: PacksDetails(
-                title: 'Master',
-                score: '79',
-                slot1: 'crown.png',
-                slot2: 'star.png',
-              ),
-            ),
-            const SizedBox(height: 14),
-            const MyButton(
-              page: MyRules(),
-              child: PacksDetails(
-                title: 'Survival',
-                score: '19',
-                slot1: 'skull.png',
-                slot2: 'heart.png',
-              ),
-            ),
+            const SizedBox(height: 34),
+            const PacksList(),
           ],
         ),
       ),

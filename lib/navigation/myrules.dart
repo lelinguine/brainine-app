@@ -6,19 +6,15 @@ class MyRules extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ElevatedButton(
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-          ),
-          child: const Text('Back'),
-          onPressed: () {
-            Navigator.pop(
-              context,
-            );
-          },
-        ),
+        body: Center(
+      child: ElevatedButton(
+        child: const Text('Home'),
+        onPressed: () {
+          Navigator.pop(
+            context,
+          );
+        },
       ),
-    );
+    ));
   }
 }

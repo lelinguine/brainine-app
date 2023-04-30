@@ -20,8 +20,8 @@ class PacksDetails extends StatelessWidget {
         child: Stack(
           children: [
             Positioned(
-              top: 6,
-              left: 6,
+              top: 5,
+              left: 5,
               child: Row(
                 children: [
                   Image.asset(
@@ -40,8 +40,7 @@ class PacksDetails extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("$title's Path",
-                      style: Theme.of(context).textTheme.titleMedium),
+                  Text(title, style: Theme.of(context).textTheme.titleMedium),
                   Text("${score}pts",
                       style: Theme.of(context).textTheme.bodyMedium),
                 ],
