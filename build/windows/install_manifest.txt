@@ -25,6 +25,5 @@ C:/Projects/Workspace/brainine-app/build/windows/runner/Debug/data/flutter_asset
 C:/Projects/Workspace/brainine-app/build/windows/runner/Debug/data/flutter_assets/lib/assets/light/skull.png
 C:/Projects/Workspace/brainine-app/build/windows/runner/Debug/data/flutter_assets/lib/assets/light/star.png
 C:/Projects/Workspace/brainine-app/build/windows/runner/Debug/data/flutter_assets/lib/assets/light/trophy.png
-C:/Projects/Workspace/brainine-app/build/windows/runner/Debug/data/flutter_assets/NOTICES
 C:/Projects/Workspace/brainine-app/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
 C:/Projects/Workspace/brainine-app/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

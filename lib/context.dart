@@ -8,9 +8,10 @@ extension MyContextExtension on BuildContext {
   }
 
   String getAssets() {
+    String assets = 'lib/assets/';
     if (isDark()) {
-      return 'lib/assets/dark/';
+      return '${assets}dark/';
     }
-    return 'lib/assets/light/';
+    return '${assets}light/';
   }
 }
