@@ -25,6 +25,7 @@ class PacksList extends StatelessWidget {
 
         return ListView.builder(
           shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
           itemCount: data.length,
           itemBuilder: (context, index) {
             final pack = data[index];
