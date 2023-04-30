@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../navigation/myRoutes.dart';
-import '../navigation/myRules.dart';
+import '../navigation/myroutes.dart';
 
 class MyButton extends StatefulWidget {
   const MyButton({super.key, required this.child, required this.page});

@@ -1,10 +1,10 @@
-import 'package:brainine/navigation/myRules.dart';
 import 'package:flutter/material.dart';
 
 import '../context.dart';
-import '../components/optionsdetails.dart';
-import '../components/packsDetails.dart';
 
+import '../navigation/myrules.dart';
+import '../components/optionsdetails.dart';
+import '../components/packsdetails.dart';
 import '../components/mybutton.dart';
 
 class MyHome extends StatelessWidget {

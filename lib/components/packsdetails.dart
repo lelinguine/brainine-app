@@ -1,5 +1,6 @@
-import 'package:brainine/context.dart';
 import 'package:flutter/material.dart';
+
+import '../context.dart';
 
 class PacksDetails extends StatelessWidget {
   const PacksDetails(
