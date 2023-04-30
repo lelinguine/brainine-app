@@ -1,4 +1,4 @@
-import 'package:brainine/navigation/myHome.dart';
+import 'package:brainine/navigation/myhome.dart';
 import 'package:flutter/material.dart';
 
 class MyRules extends StatelessWidget {

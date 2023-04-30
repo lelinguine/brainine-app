@@ -2,7 +2,7 @@ import 'package:brainine/navigation/myRules.dart';
 import 'package:flutter/material.dart';
 
 import '../context.dart';
-import '../components/optionsDetails.dart';
+import '../components/optionsdetails.dart';
 import '../components/packsDetails.dart';
 
 import '../components/mybutton.dart';
