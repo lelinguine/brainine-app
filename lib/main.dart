@@ -21,7 +21,7 @@ class MyMainApp extends StatelessWidget {
             : const Color.fromARGB(255, 255, 255, 255),
         fontFamily: GoogleFonts.poppins(fontWeight: FontWeight.w600).fontFamily,
         primaryColor: context.isDark() ? Colors.black : Colors.white,
-        primaryColorLight: context.isDark() ? Colors.white : Colors.black,
+        secondaryHeaderColor: context.isDark() ? Colors.white : Colors.black,
         brightness: context.isDark() ? Brightness.dark : Brightness.light,
         textTheme: const TextTheme(
             titleLarge: TextStyle(

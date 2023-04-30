@@ -56,11 +56,11 @@ class _MyButtonState extends State<MyButton> {
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(
                     width: 4,
-                    color: Theme.of(context).primaryColorLight,
+                    color: Theme.of(context).secondaryHeaderColor,
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Theme.of(context).primaryColorLight,
+                      color: Theme.of(context).secondaryHeaderColor,
                       offset: shadowOffset,
                     ),
                   ],
