@@ -1,0 +1,29 @@
+{
+    "packs": [
+      {
+        "title": "Sprinter'Path",
+        "rule": "Sprint 1km in 3 minutes",
+        "score": "100",
+        "path": "/sprinter",
+        "slot1": "run.png",
+        "slot2": "chrono.png"
+      },
+      {
+        "title": "Master'Path",
+        "rule": "Complete 10 challenges",
+        "score": "100",
+        "path": "/sprinter",
+        "slot1": "crown.png",
+        "slot2": "star.png"
+      },
+      {
+        "title": "Survival'Path",
+        "rule":"Survive 10 minutes",
+        "score": "100",
+        "path": "/sprinter",
+        "slot1": "skull.png",
+        "slot2": "heart.png"
+      }
+    ]
+  }
+  

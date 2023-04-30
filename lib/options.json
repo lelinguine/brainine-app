@@ -1,0 +1,13 @@
+{
+    "packs": [
+      {
+        "path": "/sprinter",
+        "slot1": "graph.png"
+      },
+      {
+        "path": "/sprinter",
+        "slot1": "trophy.png"
+      }
+    ]
+  }
+  
