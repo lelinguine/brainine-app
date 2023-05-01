@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
 
-import '../navigation/myroutes.dart';
-
 class MyButton extends StatefulWidget {
-  const MyButton({super.key, required this.child, required this.page});
+  const MyButton({super.key, required this.child, required this.action});
 
   final Widget child;
-  final Widget page;
+  final VoidCallback action;
 
   @override
-  _MyButtonState createState() => _MyButtonState(child: child, page: page);
+  _MyButtonState createState() => _MyButtonState(child: child, action: action);
 }
 
 class _MyButtonState extends State<MyButton> {
-  _MyButtonState({required this.child, required this.page});
+  _MyButtonState({required this.child, required this.action});
 
   final Widget child;
-  final Widget page;
+  final VoidCallback action;
 
   Offset pushOffset = const Offset(0, 0);
   Offset shadowOffset = const Offset(4, 4);
@@ -42,7 +40,7 @@ class _MyButtonState extends State<MyButton> {
         child: GestureDetector(
             onTapUp: (TapUpDetails tapUpDetails) {
               _updateOffset();
-              pushPage(context, page);
+              action();
             },
             onTapCancel: () {
               _updateOffset();

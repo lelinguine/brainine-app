@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:brainine/navigation/myrules.dart';
 import 'package:flutter/material.dart';
 
 import 'mybutton.dart';
 import 'packsdetails.dart';
+import '../navigation/myroutes.dart';
 
 class PacksList extends StatelessWidget {
   final String jsonFilePath = 'lib/packs.json';
@@ -32,7 +32,7 @@ class PacksList extends StatelessWidget {
             return Column(
               children: [
                 MyButton(
-                  page: const MyRules(),
+                  action: () => pushRule(context),
                   child: PacksDetails(
                     title: pack['title'],
                     score: pack['score'],

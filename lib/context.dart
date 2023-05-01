@@ -4,7 +4,7 @@ extension MyContextExtension on BuildContext {
   String get customTitle => 'Brainine';
 
   bool isDark() {
-    return MediaQuery.of(this).platformBrightness == Brightness.dark;
+    return MediaQuery.of(this).platformBrightness == Brightness.light;
   }
 
   String getAssets() {

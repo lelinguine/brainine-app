@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../context.dart';
-
-import '../navigation/myrules.dart';
 import '../components/mybutton.dart';
 import '../components/optionsdetails.dart';
 import '../components/packslist.dart';
+import '../navigation/myroutes.dart';
+
+import 'package:brainine/navigation/myglory.dart';
+import 'package:brainine/navigation/mystats.dart';
 
 class MyHome extends StatelessWidget {
   const MyHome({Key? key}) : super(key: key);
@@ -26,17 +28,17 @@ class MyHome extends StatelessWidget {
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 12),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                  page: MyRules(),
-                  child: OptionsDetails(slot: 'graph.png'),
+                  action: () => pushOptions(context, const MyStats()),
+                  child: const OptionsDetails(slot: 'graph.png'),
                 ),
-                SizedBox(width: 12),
+                const SizedBox(width: 12),
                 MyButton(
-                  page: MyRules(),
-                  child: OptionsDetails(slot: 'trophy.png'),
+                  action: () => pushOptions(context, const MyGlory()),
+                  child: const OptionsDetails(slot: 'trophy.png'),
                 ),
               ],
             ),

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import '../navigation/myroutes.dart';
 
 class MyRules extends StatelessWidget {
   const MyRules({super.key});
@@ -7,13 +10,17 @@ class MyRules extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
-      child: ElevatedButton(
-        child: const Text('Home'),
-        onPressed: () {
-          Navigator.pop(
-            context,
-          );
-        },
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ElevatedButton(
+            child: const Text('Test'),
+            onPressed: () {
+              HapticFeedback.vibrate();
+              pushHome(context);
+            },
+          ),
+        ],
       ),
     ));
   }
