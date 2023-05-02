@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MyButton extends StatefulWidget {
   const MyButton({super.key, required this.child, required this.action});
@@ -30,6 +31,7 @@ class _MyButtonState extends State<MyButton> {
         pushOffset = const Offset(0, 0);
         shadowOffset = const Offset(4, 4);
       }
+      HapticFeedback.vibrate();
     });
   }
 

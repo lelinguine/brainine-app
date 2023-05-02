@@ -1,7 +1,9 @@
+import 'package:brainine/navigation/pages/myglory.dart';
+import 'package:brainine/navigation/pages/mypacks.dart';
 import 'package:flutter/material.dart';
 
 import 'package:brainine/navigation/myhome.dart';
-import 'package:brainine/navigation/myrules.dart';
+import 'package:brainine/navigation/pages/myrules.dart';
 
 Route slideAnimation(Widget page, Offset offset) {
   return PageRouteBuilder(
@@ -16,14 +18,14 @@ Route slideAnimation(Widget page, Offset offset) {
   );
 }
 
-void pushHome(BuildContext context) {
-  Navigator.pop(
-      context, slideAnimation(const MyHome(), const Offset(-1.0, 0.0)));
-}
-
 void pushRule(BuildContext context) {
   Navigator.push(
-      context, slideAnimation(const MyRules(), const Offset(0.0, 1.0)));
+      context, slideAnimation(const MyRules(), const Offset(1.0, 0.0)));
+}
+
+void pushPacks(BuildContext context) {
+  Navigator.push(
+      context, slideAnimation(const MyPacks(), const Offset(1.0, 0.0)));
 }
 
 void pushOptions(BuildContext context, Widget page) {

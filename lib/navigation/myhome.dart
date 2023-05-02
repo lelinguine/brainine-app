@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../context.dart';
-import '../components/mybutton.dart';
+import '../components/buttons/mybutton.dart';
 import '../components/optionsdetails.dart';
 import '../components/packslist.dart';
 import '../navigation/myroutes.dart';
 
-import 'package:brainine/navigation/myglory.dart';
-import 'package:brainine/navigation/mystats.dart';
+import 'package:brainine/navigation/pages/myglory.dart';
+import 'package:brainine/navigation/pages/mystats.dart';
 
 class MyHome extends StatelessWidget {
   const MyHome({Key? key}) : super(key: key);

@@ -24,17 +24,15 @@ class MyMainApp extends StatelessWidget {
         secondaryHeaderColor: context.isDark() ? Colors.white : Colors.black,
         brightness: context.isDark() ? Brightness.dark : Brightness.light,
         textTheme: const TextTheme(
-            titleLarge: TextStyle(
-              fontSize: 36.0,
-              height: 1.2,
-            ),
-            titleMedium: TextStyle(
-              fontSize: 20.0,
-            ),
-            bodyMedium: TextStyle(
-              fontSize: 16.0,
-              height: 1,
-            )),
+          titleLarge: TextStyle(
+            fontSize: 36.0,
+            height: 1.2,
+          ),
+          titleMedium: TextStyle(
+            fontSize: 20.0,
+          ),
+          bodyMedium: TextStyle(fontSize: 16.0, height: 1.3),
+        ),
       ),
       home: const MyHome(),
     );
