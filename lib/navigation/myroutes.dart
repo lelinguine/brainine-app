@@ -1,8 +1,6 @@
-import 'package:brainine/navigation/pages/myglory.dart';
 import 'package:brainine/navigation/pages/mypacks.dart';
 import 'package:flutter/material.dart';
 
-import 'package:brainine/navigation/myhome.dart';
 import 'package:brainine/navigation/pages/myrules.dart';
 
 Route slideAnimation(Widget page, Offset offset) {

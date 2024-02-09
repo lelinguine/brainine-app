@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'context.dart';
 import 'navigation/myhome.dart';
@@ -19,7 +18,6 @@ class MyMainApp extends StatelessWidget {
         scaffoldBackgroundColor: context.isDark()
             ? const Color.fromARGB(255, 0, 0, 0)
             : const Color.fromARGB(255, 255, 255, 255),
-        fontFamily: GoogleFonts.poppins(fontWeight: FontWeight.w600).fontFamily,
         primaryColor: context.isDark() ? Colors.black : Colors.white,
         secondaryHeaderColor: context.isDark() ? Colors.white : Colors.black,
         brightness: context.isDark() ? Brightness.dark : Brightness.light,
