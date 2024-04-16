@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\GitHub\brainine-app\build\windows\x64\CMakeFiles\00024edfbcf0900310629fca62686aff\flutter_windows.dll.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\GitHub\brainine-app\build\windows\x64\CMakeFiles\8fab14960ed36e348cff0454940b46c4\flutter_assemble.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\GitHub\brainine-app\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Projects\GitHub\brainine-app\build\windows\x64\flutter\CMakeFiles\flutter_assemble" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E4C1062E-C47B-3EAF-914C-5C9FE0202CC5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
